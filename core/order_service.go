@@ -12,7 +12,7 @@ type OrderServiceImpl struct {
 	repo OrderRepository // OrderRepository is the secondary port
 }
 
-func newOrderService(repo OrderRepository) OrderService {
+func NewOrderService(repo OrderRepository) OrderService {
 	return &OrderServiceImpl{repo: repo} // return an instance of OrderServiceImpl
 }
 
